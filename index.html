@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Currículo - Tommy Ken Ishimatsu Goto</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="Currículo de Tommy Ken Ishimatsu Goto, estudante de Ciência da Computação no Inteli."
+  />
+  <style>
+    :root {
+      --bg-page: #f3f4f6;
+      --bg-card: #ffffff;
+      --primary: #111827;
+      --accent: #2563eb;
+      --text-main: #111827;
+      --text-muted: #4b5563;
+      --border-soft: #e5e7eb;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui,
+        -webkit-system-font, sans-serif;
+      background-color: var(--bg-page);
+      color: var(--text-main);
+      line-height: 1.6;
+    }
+
+    .skip-link {
+      position: absolute;
+      left: -999px;
+      top: auto;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+    }
+
+    .skip-link:focus {
+      position: static;
+      width: auto;
+      height: auto;
+      margin: 1rem;
+      padding: 0.5rem 1rem;
+      background: #ffffff;
+      border-radius: 999px;
+      border: 2px solid var(--accent);
+      z-index: 1000;
+    }
+
+    header {
+      background: var(--primary);
+      color: #ffffff;
+      padding: 2.5rem 1rem 2rem;
+    }
+
+    header .container {
+      max-width: 920px;
+      margin: 0 auto;
+    }
+
+    header h1 {
+      margin: 0 0 0.5rem;
+      font-size: clamp(2rem, 3vw, 2.4rem);
+      letter-spacing: 0.03em;
+    }
+
+    .subtitle {
+      margin: 0 0 1.5rem;
+      color: #d1d5db;
+      font-size: 0.95rem;
+    }
+
+    .contact {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem 1.25rem;
+      font-size: 0.9rem;
+    }
+
+    .contact a {
+      color: #bfdbfe;
+      text-decoration: none;
+      word-break: break-all;
+    }
+
+    .contact a:hover,
+    .contact a:focus {
+      text-decoration: underline;
+    }
+
+    main {
+      padding: 2rem 1rem 3rem;
+    }
+
+    .card {
+      max-width: 920px;
+      margin: 0 auto;
+      background: var(--bg-card);
+      border-radius: 0.75rem;
+      padding: 2rem;
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+      border: 1px solid var(--border-soft);
+    }
+
+    @media (max-width: 640px) {
+      .card {
+        padding: 1.5rem;
+      }
+    }
+
+    h2.section-title {
+      font-size: 1.2rem;
+      margin: 2rem 0 0.5rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--text-muted);
+    }
+
+    h2.section-title:first-of-type {
+      margin-top: 0;
+    }
+
+    .section-divider {
+      width: 40px;
+      height: 3px;
+      border-radius: 999px;
+      background: var(--accent);
+      margin-bottom: 1rem;
+    }
+
+    .edu-item,
+    .project-item,
+    .activity-item {
+      margin-bottom: 1.2rem;
+    }
+
+    .edu-header,
+    .project-header,
+    .activity-header {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 0.4rem 1rem;
+      font-weight: 600;
+    }
+
+    .edu-institution,
+    .project-title,
+    .activity-title {
+      font-size: 0.98rem;
+    }
+
+    .edu-location,
+    .project-dates,
+    .activity-role {
+      font-size: 0.86rem;
+      color: var(--text-muted);
+    }
+
+    .edu-course {
+      margin-top: 0.15rem;
+      font-weight: 500;
+    }
+
+    .edu-details,
+    .project-description,
+    .activity-description {
+      margin: 0.4rem 0 0;
+      font-size: 0.92rem;
+      color: var(--text-main);
+    }
+
+    .tag-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin-top: 0.4rem;
+    }
+
+    .tag {
+      font-size: 0.78rem;
+      padding: 0.15rem 0.55rem;
+      border-radius: 999px;
+      background: #eff6ff;
+      color: #1d4ed8;
+      border: 1px solid #dbeafe;
+      white-space: nowrap;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+      margin-top: 0.5rem;
+    }
+
+    .skill-block h3 {
+      margin: 0 0 0.35rem;
+      font-size: 0.95rem;
+    }
+
+    .skill-block p {
+      margin: 0;
+      font-size: 0.9rem;
+      color: var(--text-main);
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      padding: 0 1rem 1.5rem;
+    }
+
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    footer a:hover,
+    footer a:focus {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <a href="#conteudo-principal" class="skip-link">
+    Ir para o conteúdo principal
+  </a>
+
+  <header>
+    <div class="container">
+      <h1>Tommy Ken Ishimatsu Goto</h1>
+      <p class="subtitle">
+        Bacharelado em Ciência da Computação &mdash; Inteli · São Paulo - SP
+      </p>
+      <div class="contact" aria-label="Informações de contato">
+        <span>📱 <a href="tel:+5511991004511">+55&nbsp;11&nbsp;99100-4511</a></span>
+        <span>📧 <a href="mailto:tommy.goto@sou.inteli.edu.br">tommy.goto@sou.inteli.edu.br</a></span>
+        <span>💼 <a href="https://www.linkedin.com/in/tommygoto" target="_blank" rel="noopener noreferrer">linkedin.com/in/tommygoto</a></span>
+        <span>💻 <a href="https://github.com/tommygoto" target="_blank" rel="noopener noreferrer">github.com/tommygoto</a></span>
+      </div>
+    </div>
+  </header>
+
+  <main id="conteudo-principal" role="main">
+    <section class="card" aria-label="Currículo de Tommy Ken Ishimatsu Goto">
+      <!-- EDUCAÇÃO -->
+      <h2 class="section-title" id="sec-educacao">Educação</h2>
+      <div class="section-divider" aria-hidden="true"></div>
+
+      <article class="edu-item" aria-labelledby="edu-inteli">
+        <div class="edu-header">
+          <div>
+            <div id="edu-inteli" class="edu-institution">
+              Inteli &mdash; Instituto de Tecnologia e Liderança
+            </div>
+            <div class="edu-course">
+              Bacharelado em Ciência da Computação
+            </div>
+          </div>
+          <div class="edu-location">
+            São Paulo &middot; Jan 2023 &mdash; Dez 2026
+          </div>
+        </div>
+        <p class="edu-details">
+          Disciplinas relevantes: Algoritmos &amp; Estruturas de Dados, Ciência de Dados,
+          Desenvolvimento de Software, Machine Learning, Cálculo, Estatística e
+          Metodologias Ágeis. Metodologia baseada em projetos reais com empresas
+          como Vale, Vivo, IBM, Uber e Dell.
+        </p>
+      </article>
+
+      <!-- PROJETOS DE DESTAQUE -->
+      <h2 class="section-title" id="sec-projetos">Projetos de Destaque</h2>
+      <div class="section-divider" aria-hidden="true"></div>
+
+      <article class="project-item" aria-labelledby="proj-aegea">
+        <div class="project-header">
+          <div id="proj-aegea" class="project-title">
+            Pesquisa Operacional &mdash; Aegea
+          </div>
+          <div class="project-dates">
+            Fev 2024 &mdash; Abr 2024
+          </div>
+        </div>
+        <p class="project-description">
+          Desenvolvimento e implementação de um sistema de otimização de rotas de
+          leitura de hidrômetros, reduzindo o número de leituristas de 300 para 58 e
+          otimizando a cobertura de 378.000 endereços com algoritmos inspirados no
+          Problema do Caixeiro Viajante, aumentando a eficiência operacional.
+        </p>
+        <div class="tag-list" aria-label="Competências envolvidas">
+          <span class="tag">Otimização de algoritmos</span>
+          <span class="tag">Planejamento de rotas</span>
+          <span class="tag">Algoritmo genético</span>
+          <span class="tag">Python</span>
+          <span class="tag">React.js</span>
+        </div>
+      </article>
+
+      <article class="project-item" aria-labelledby="proj-vale">
+        <div class="project-header">
+          <div id="proj-vale" class="project-title">
+            Otimização de Alto Desempenho em Grafos para Distribuição de Ferro &mdash; Vale SA
+          </div>
+          <div class="project-dates">
+            Abr 2024 &mdash; Jun 2024
+          </div>
+        </div>
+        <p class="project-description">
+          Desenvolvimento de software para maximizar o fluxo em redes de distribuição
+          de ferro, utilizando modelagem de grafos e algoritmos de otimização, melhorando
+          a alocação de recursos e a eficiência em toda a rede logística.
+        </p>
+        <div class="tag-list" aria-label="Competências envolvidas">
+          <span class="tag">Java</span>
+          <span class="tag">Spring Boot</span>
+          <span class="tag">React.js</span>
+          <span class="tag">Estruturas de dados</span>
+          <span class="tag">Algoritmos</span>
+          <span class="tag">NoSQL</span>
+        </div>
+      </article>
+
+      <article class="project-item" aria-labelledby="proj-mobly">
+        <div class="project-header">
+          <div id="proj-mobly" class="project-title">
+            Modelo de Machine Learning &mdash; Mobly
+          </div>
+          <div class="project-dates">
+            Ago 2023 &mdash; Out 2023
+          </div>
+        </div>
+        <p class="project-description">
+          Desenvolvimento de modelo preditivo para previsão de vendas de SKUs da Mobly,
+          integrando técnicas avançadas de análise de dados e aprendizado de máquina
+          para otimizar o gerenciamento de inventário. O modelo obteve desvio médio de
+          ~2,83 unidades em relação às vendas reais.
+        </p>
+        <div class="tag-list" aria-label="Competências envolvidas">
+          <span class="tag">Inteligência artificial</span>
+          <span class="tag">Machine Learning</span>
+          <span class="tag">Python</span>
+          <span class="tag">Scikit-Learn</span>
+          <span class="tag">CRISP-DM</span>
+        </div>
+      </article>
+
+      <!-- ATIVIDADES EXTRACURRICULARES -->
+      <h2 class="section-title" id="sec-atividades">Atividades Extracurriculares</h2>
+      <div class="section-divider" aria-hidden="true"></div>
+
+      <article class="activity-item" aria-labelledby="act-inteli-finance">
+        <div class="activity-header">
+          <div>
+            <div id="act-inteli-finance" class="activity-title">
+              Inteli Finance &mdash; Liga de Mercado Financeiro do Inteli
+            </div>
+            <div class="activity-role">
+              Analista de Renda Fixa e Analista Macro Estados Unidos
+            </div>
+          </div>
+        </div>
+        <p class="activity-description">
+          Produção de relatórios financeiros, estudos de renda fixa e análise
+          macroeconômica, com foco em impactos de cenário na taxa de juros e em
+          recomendações de investimentos para portfólio da liga.
+        </p>
+      </article>
+
+      <article class="activity-item" aria-labelledby="act-inai">
+        <div class="activity-header">
+          <div>
+            <div id="act-inai" class="activity-title">
+              InAI &mdash; Liga de Inteligência Artificial do Inteli
+            </div>
+            <div class="activity-role">
+              Membro da equipe de competição
+            </div>
+          </div>
+        </div>
+        <p class="activity-description">
+          Participação em hackathons e datathons, desenvolvimento de soluções usando
+          redes neurais e técnicas de Machine Learning, com foco em desafios práticos de
+          ciência de dados.
+        </p>
+      </article>
+
+      <!-- HABILIDADES & CERTIFICAÇÕES -->
+      <h2 class="section-title" id="sec-skills">Habilidades &amp; Certificações</h2>
+      <div class="section-divider" aria-hidden="true"></div>
+
+      <section class="skills-grid" aria-label="Habilidades técnicas, idiomas e certificações">
+        <div class="skill-block">
+          <h3>Línguas</h3>
+          <p>Inglês (Avançado) · Espanhol (Avançado)</p>
+        </div>
+
+        <div class="skill-block">
+          <h3>Habilidades Técnicas</h3>
+          <p>
+            Python; Java; C#; ASP.NET Core; SQL; NoSQL; Git; Algoritmos e
+            Estruturas de Dados; Machine Learning; Data Science; AWS; Linux; Scrum.
+          </p>
+        </div>
+
+        <div class="skill-block">
+          <h3>Certificações</h3>
+          <p>
+            AWS Academy Cloud Foundations · PCAP: Programming Essentials in Python
+            (Cisco Academy) · Proficiência em Espanhol B2 &mdash; DELE B2.
+          </p>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <footer>
+    Página acessível com integração ao
+    <a href="https://www.gov.br/governodigital/pt-br/acessibilidade-e-usuario/vlibras" target="_blank" rel="noopener noreferrer">
+      VLibras
+    </a>
+    para tradução em Libras.
+  </footer>
+
+  <!-- VLibras: bloco oficial do widget -->
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget("https://vlibras.gov.br/app");
+  </script>
+</body>
+</html>
